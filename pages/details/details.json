@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wemark": "../../src/wemark/wemark"
+  }
+}

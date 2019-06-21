@@ -1,0 +1,12 @@
+/* pages/details/details.wxss */
+page{
+  background: #fff !important;
+}
+.container{
+	padding:20px;
+}
+.title1 {
+  font-size: 50rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}

@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">关于</view>
+</cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于linux命令库</view>
+  <view class='text-content'>
+    <view>Hi！开发者~欢迎使用linux命令库！</view>
+    <view class='margin-top-sm'>该项目是我借用【https://github.com/jaywcjlove/linux-command】此开源项目的linux命令资料数据,同时进行了一些处理。这个项目还使用了ColorUI组件库做页面样式排版跟wemark进行对Markdown数据进行渲染。在此我非常感谢这几个项目开发者的无私奉献才让我有机会编写这个项目。</view>
+    <view class='margin-top-sm'>项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，可以在GitHub里点星支持一下！如果你有一些好的想法或者发现一些错误可以在GitHub里提交给我，我会进行修复更新。</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+  </view>
+</view>

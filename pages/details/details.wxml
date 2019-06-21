@@ -1,0 +1,9 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="true">
+  <view slot="backText">返回</view>
+  <view slot="content">
+    <text class='title1'>{{title}}</text>
+  </view>
+</cu-custom>
+<view class="container">
+  <wemark md="{{md}}" link highlight type="wemark"></wemark>  
+</view>

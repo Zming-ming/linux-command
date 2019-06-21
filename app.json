@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/about/about",
+    "pages/about/about/about",
+    "pages/about/log/log"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#0081ff",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search-solid.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/list-solid.png",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about-solid.png",
+        "text": "关于"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,36 @@
+<!--pages/list/list.wxml-->
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">
+    <image class='img' src='/images/linux.png'></image>
+    <text class='title'>Linux</text>
+  </view>
+</cu-custom>
+<view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" bindinput="searchCommand"></input>
+  </view>
+</view>
+<scroll-view scroll-y class="indexes" scroll-into-view="indexes-{{listCurID}}" style="height:calc(100vh - {{CustomBar}}px - 50px)" scroll-with-animation="true" enable-back-to-top="true">
+  <block wx:for="{{list}}" wx:key>
+    <view class="padding indexItem-{{item.id.id}}" id="indexes-{{item.id}}" data-index="{{item.id}}">{{item.id}}</view>
+    <view class="cu-list menu-avatar no-padding">
+      <view class="cu-item" wx:for="{{item.list}}" wx:key wx:for-item="item2" bindtap='detail' data-title="{{item2.title}}">
+        <view class="cu-avatar round lg">{{item.id}}</view>
+        <view class="content">
+          <view class="text-grey">{{item2.title}}</view>
+          <view class="text-gray text-sm">{{item2.name}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+<view class="indexBar" style="height:calc(100vh - {{CustomBar}}px - 50px)">
+  <view class="indexBar-box" bindtouchstart="tStart" bindtouchend="tEnd" catchtouchmove="tMove">
+    <view class="indexBar-item {{listCur==item3.id?'text-blue cur':''}}" wx:for="{{list}}" wx:key wx:for-item="item3" id="{{item3.id}}" bindtouchstart="getCur" bindtouchend="setCur">{{item3.id}}</view>
+  </view>
+</view>
+<!--选择显示-->
+<view hidden="{{hidden}}" class="indexToast">
+  {{listCur}}
+</view>

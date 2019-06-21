@@ -1,0 +1,15 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+.img {
+  width: 60rpx !important;
+  height: 60rpx !important;
+  float: left;
+}
+
+.title {
+  float: left;
+  margin-left: 20rpx;
+  font-size: 60rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
